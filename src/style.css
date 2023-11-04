@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.navItem {
+  @apply inline 2xl:px-4 hover:text-[black] hover:border-b-orange hover:border-b-[3px] py-[46px];
+}
+.profileImage {
+  @apply w-12 hover:border-2 hover:border-orange rounded-full cursor-pointer;
+}
