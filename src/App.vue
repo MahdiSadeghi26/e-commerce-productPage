@@ -2,7 +2,7 @@
   import Nav from './components/Nav.vue'
 </script>
 <template>
-  <div class=" h-screen flex justify-center">
+  <div class="flex justify-center">
     <Nav/>
   </div>
 </template>
