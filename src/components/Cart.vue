@@ -1,7 +1,7 @@
 <script setup>
 </script>
 <template>
-    <div class="xl:w-[350px]  xl:top-[90px] xl:right-10  rounded-lg absolute shadow-lg bg-white flex flex-col ">
+    <div class="xl:w-[350px]  md:top-[90px] md:right-10 right-2 top-20  rounded-lg absolute shadow-lg bg-white flex flex-col ">
             <p class="font-kumbhBold py-5 px-5">Cart</p>
             <hr class="w-full border-grayishBlue ">
             <!-- items container -->
