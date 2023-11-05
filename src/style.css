@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 .navItem {
-  @apply inline 2xl:px-4 hover:text-[black] hover:border-b-orange hover:border-b-[3px] py-[46px];
+  @apply inline lg:px-4 hover:text-[black] lg:hover:border-b-orange lg:hover:border-b-[3px] lg:py-[46px];
 }
 .profileImage {
-  @apply w-12 hover:border-2 hover:border-orange rounded-full cursor-pointer;
+  @apply md:w-12 w-9 hover:border-2 hover:border-orange rounded-full cursor-pointer ;
+}
+.blur{
+  @apply backdrop-brightness-110 blur-0 bg-[rgba(0,0,0,0.8)]
 }
