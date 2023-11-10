@@ -8,6 +8,27 @@
 .profileImage {
   @apply md:w-12 w-9 hover:border-2 hover:border-orange rounded-full cursor-pointer ;
 }
-.blur{
-  @apply backdrop-brightness-110 blur-0 bg-[rgba(0,0,0,0.8)]
+.blur {
+  @apply backdrop-brightness-110 blur-0 bg-[rgba(0,0,0,0.8)];
+}
+.smallPicture {
+  @apply rounded-2xl w-1/5 h-full hover:opacity-50 hover:border-2 hover:border-orange;
+}
+.activePicture {
+  @apply opacity-30  ;
+}
+.activeItem{
+  @apply border-4 border-orange bg-white
+}
+.modalkeys{
+  @apply bg-white lg:w-14 h-14 rounded-full flex items-center justify-center hover:text-orange
+}
+.rightKey{
+  @apply absolute -right-7 
+}
+.leftKey{
+  @apply absolute -left-7 
+}
+.modalActivePicture{
+  @apply opacity-50 bg-black
 }
