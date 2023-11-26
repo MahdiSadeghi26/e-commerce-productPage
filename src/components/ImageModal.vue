@@ -6,14 +6,21 @@ import { useImageIndexStore } from '../stores/ImageIndex'
 let ModalStore = useModalStore()
 let activeImage = useImageIndexStore()
 
-let incrementImage=()=>{
-    if (activeImage.activeIndex<5) {
+let incrementImage = () => {
+    if (activeImage.activeIndex < 5) {
         activeImage.activeIndex++
     }
-    if (activeImage.activeIndex==5) {    
-        activeImage.activeIndex=1
+    if (activeImage.activeIndex == 5) {
+        activeImage.activeIndex = 1
     }
-    
+
+}
+let decresmentImage = () => {
+    if (activeImage.activeIndex == 1) {
+        activeImage.activeIndex = 4
+    } else {
+        activeImage.activeIndex--
+    }
 }
 
 </script>
@@ -27,12 +34,13 @@ let incrementImage=()=>{
             <div class="w-11/12 flex items-center relative">
                 <i class="fa-solid fa-xmark text-orange absolute -top-2 -right-10 fa-2xl"
                     @click="ModalStore.isActive = false"></i>
-                <img :src="`/images/image-product-${activeImage.activeIndex}.jpg`" :key="activeImage.activeIndex" alt="modal main image"
-                    class=" rounded-2xl">
+                <img :src="`/images/image-product-${activeImage.activeIndex}.jpg`" :key="activeImage.activeIndex"
+                    alt="modal main image" class=" rounded-2xl">
                 <!-- showcase keys -->
                 <div class="absolute flex w-full  items-center justify-between">
-                    <div class="modalkeys leftKey"><i class="fa-solid fa-chevron-left fa-xl"></i></div>
-                    <div class="modalkeys rightKey"><i class="fa-solid fa-chevron-right fa-xl" @click="incrementImage"></i></div>
+                    <div class="modalkeys leftKey"><i class="fa-solid fa-chevron-left fa-xl" @click="decresmentImage"></i></div>
+                    <div class="modalkeys rightKey"><i class="fa-solid fa-chevron-right fa-xl" @click="incrementImage"></i>
+                    </div>
                 </div>
             </div>
             <!-- tiny pictures -->
