@@ -18,7 +18,7 @@ export default {
         'veryDarkGrayish':'hsl(220, 13%, 13%)',
         'darkGrayishBlue':'hsl(219, 9%, 45%)',
         'grayishBlue':'hsl(220, 14%, 75%)',
-        
+        'lightgb':'hsl(223, 64%, 98%)'
       },
     },
   },
