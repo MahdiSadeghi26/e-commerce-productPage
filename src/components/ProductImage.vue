@@ -10,10 +10,10 @@ const imageClickHandler = (index) => {
 }
 </script>
 <template>
-    <div class="flex flex-col gap-y-5 w-1/2 items-center h-5/6 xl:px-10 ">
+    <div class="flex flex-col gap-y-5 lg:w-1/2 md:w-full  items-center lg:h-5/6 xl:px-10 ">
         <!-- main image -->
-        <img src="/images/image-product-1.jpg" alt="main picture" class="w-10/12  rounded-2xl">
-        <div class="w-10/12 flex gap-8 ">
+        <img src="/images/image-product-1.jpg" alt="main picture" class="lg:w-10/12 md:h-[300px] w-full  md:rounded-2xl">
+        <div class="w-10/12 lg:flex hidden gap-8  ">
             <div class="smallPicture" @click="imageClickHandler(1)" :class="{ activeItem: activeImage.activeIndex == 1 }">
                 <img src="/images/image-product-1.jpg" alt="main picture" class="rounded-xl"
                     :class="{ activePicture: activeImage.activeIndex == 1 }">
