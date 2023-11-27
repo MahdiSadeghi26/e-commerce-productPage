@@ -30,12 +30,12 @@ let decresmentImage = () => {
         <!-- black wrapper -->
         <div class="w-screen h-screen blur absolute">s</div>
         <!-- picture slide show -->
-        <div class="z-10 flex xl:w-1/3  h-5/6 flex-col items-center gap-y-5 cursor-pointer">
+        <div class="z-10 flex xl:w-1/3 lg:w-1/2   flex-col items-center gap-y-5 cursor-pointer">
             <div class="w-11/12 flex items-center relative">
                 <i class="fa-solid fa-xmark text-orange absolute -top-2 -right-10 fa-2xl"
                     @click="ModalStore.isActive = false"></i>
                 <img :src="`/images/image-product-${activeImage.activeIndex}.jpg`" :key="activeImage.activeIndex"
-                    alt="modal main image" class=" rounded-2xl">
+                    alt="modal main image" class="rounded-2xl">
                 <!-- showcase keys -->
                 <div class="absolute flex w-full  items-center justify-between">
                     <div class="modalkeys leftKey"><i class="fa-solid fa-chevron-left fa-xl" @click="decresmentImage"></i>
