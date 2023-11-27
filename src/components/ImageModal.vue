@@ -1,11 +1,10 @@
 <script setup>
-const props = defineProps(['imagesNumber'])
 import { useModalStore } from '../stores/Modal'
 import { useImageIndexStore } from '../stores/ImageIndex'
 
 let ModalStore = useModalStore()
 let activeImage = useImageIndexStore()
-
+// increse index image
 let incrementImage = () => {
     if (activeImage.activeIndex < 5) {
         activeImage.activeIndex++
@@ -15,6 +14,7 @@ let incrementImage = () => {
     }
 
 }
+// minuse index image
 let decresmentImage = () => {
     if (activeImage.activeIndex == 1) {
         activeImage.activeIndex = 4
@@ -38,7 +38,8 @@ let decresmentImage = () => {
                     alt="modal main image" class=" rounded-2xl">
                 <!-- showcase keys -->
                 <div class="absolute flex w-full  items-center justify-between">
-                    <div class="modalkeys leftKey"><i class="fa-solid fa-chevron-left fa-xl" @click="decresmentImage"></i></div>
+                    <div class="modalkeys leftKey"><i class="fa-solid fa-chevron-left fa-xl" @click="decresmentImage"></i>
+                    </div>
                     <div class="modalkeys rightKey"><i class="fa-solid fa-chevron-right fa-xl" @click="incrementImage"></i>
                     </div>
                 </div>
