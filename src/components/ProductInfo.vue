@@ -2,7 +2,7 @@
 
 </script>
 <template>
-    <div class="xl:p-10 xl:w-[550px] md:w-[450px] flex flex-col gap-7  lg:px-5">
+    <div class="xl:p-10 xl:w-[550px] lg:h-5/6 md:w-[450px] flex flex-col gap-7  lg:px-5">
             <!-- company name -->
             <h2 class="uppercase text-orange font-kumbhBold tracking-widest">sneakers company</h2>
             <!-- product title -->
