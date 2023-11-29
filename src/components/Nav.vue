@@ -25,7 +25,7 @@ let trigerCartFlag = ref(false)
         <MobileNav />
         <!-- cart and profile -->
         <div class="flex md:gap-5 gap-2  items-center">
-            <div class="relative w-10"><img src="/images/icon-cart.svg" class="w-6 h-6 cursor-pointer " alt="cart icon"
+            <div class="relative w-10 z-10"><img src="/images/icon-cart.svg" class="w-6 h-6 cursor-pointer " alt="cart icon"
                     @mouseenter="trigerCartFlag=!trigerCartFlag" @mouseleave="trigerCartFlag=!trigerCartFlag" @click="trigerCartFlag=!trigerCartFlag">
                 <p class="absolute bg-orange text-[white] text-sm md:px-2 px-2 rounded-full top-[-10px]  right-2 ">2
                 </p>

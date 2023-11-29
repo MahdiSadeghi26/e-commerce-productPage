@@ -24,7 +24,7 @@ const prevSlide = () => {
 }
 </script>
 <template>
-    <div class="flex flex-col gap-y-5 lg:w-1/2 md:w-full  items-center  xl:px-10 md:relative ">
+    <div class="flex flex-col gap-y-5 lg:w-1/2 md:w-full  items-center  xl:px-10 md:relative -z-10 ">
         <!-- main image -->
         <img :src="`/images/image-product-${activeImage.activeIndex}.jpg`" :key="activeImage.activeIndex" alt="main picture"
             class="lg:w-10/12 lg:h-full md:h-[300px] w-full  md:rounded-2xl ">
