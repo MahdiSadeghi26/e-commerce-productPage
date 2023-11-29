@@ -6,7 +6,7 @@
   @apply inline lg:px-4 hover:text-[black] lg:hover:border-b-orange lg:hover:border-b-[3px] lg:py-[46px];
 }
 .profileImage {
-  @apply md:w-12 w-9 hover:border-2 hover:border-orange rounded-full cursor-pointer ;
+  @apply md:w-12 w-8 hover:border-2 hover:border-orange rounded-full cursor-pointer ;
 }
 .blur {
   @apply backdrop-brightness-110 blur-0 bg-[rgba(0,0,0,0.8)];
@@ -33,5 +33,8 @@
   @apply opacity-50 bg-black
 }
 .mobileSlide{
-  @apply absolute bg-white px-3 py-5 rounded-full lg:hidden cursor-pointer
+  @apply absolute bg-white px-3 py-5 rounded-full lg:hidden cursor-pointer md:top-[40%] top-[25%]
+}
+.addtoCartBtn{
+ @apply bg-lightgb lg:w-5/12 w-full text-center flex justify-between items-center px-4 py-4 rounded-md
 }
