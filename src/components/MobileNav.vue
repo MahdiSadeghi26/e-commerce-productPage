@@ -9,7 +9,9 @@ let trigerdMenu = ref(false)
             <i class="fa-solid fa-bars fa-xl cursor-pointer" @click="trigerdMenu = !trigerdMenu"></i>
             <img src="/images/logo.svg" alt="site logo">
         </div>
-        <div class="fixed left-0 h-screen w-screen bottom-0 blur z-10" v-if="trigerdMenu"></div>
+        <!-- background blur -->
+        <div class="fixed left-0 h-screen w-screen bottom-0 blur z-10" v-if="trigerdMenu" @click="trigerdMenu=false"></div>
+        <!-- menu -->
         <div class="flex flex-col p-10 gap-x-5 gap-y-7  md:w-[300px] w-8/12 z-20 top-0 h-screen fixed left-0 bg-white"
             v-if="trigerdMenu">
             <i class="fa-solid fa-xl fa-xmark text-darkGrayishBlue cursor-pointer py-5"
