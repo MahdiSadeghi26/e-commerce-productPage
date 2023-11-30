@@ -1,7 +1,29 @@
-# Vue 3 + Vite
+# e-commerce-product Page
+hey everyone this is one of the frontEnd Mentor chalenges.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Preview Image
+Desktop
+![Design preview for the interactive card form](./design/desktop-preview.jpg)
 
-## Recommended IDE Setup
+Mobile 
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![Design preview for the interactive card form](./design/mobile-design.jpg)
+## online visit
+https://vercel.com/mahdisadeghi26/e-commerce-product-page-74uk
+
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+vite
+```
+
+### Compile and Minify for Production
+
+```sh
+build
+```
