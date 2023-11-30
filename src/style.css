@@ -35,6 +35,6 @@
 .mobileSlide{
   @apply absolute bg-white px-3 py-5 rounded-full lg:hidden cursor-pointer md:top-[40%] top-[25%]
 }
-.addtoCartBtn{
+.counter{
  @apply bg-lightgb lg:w-5/12 w-full text-center flex justify-between items-center px-4 py-4 rounded-md
 }
