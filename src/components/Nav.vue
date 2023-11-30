@@ -1,11 +1,8 @@
 <script setup>
 import MobileNav from './MobileNav.vue'
 import Cart from './Cart.vue'
-import { ref } from 'vue';
-
-let trigerCartFlag = ref(false)
-
-
+import { useCartStore } from '../stores/cart';
+let cart=useCartStore()
 </script>
 <template>
     <div
@@ -26,15 +23,15 @@ let trigerCartFlag = ref(false)
         <!-- cart and profile -->
         <div class="flex md:gap-5 gap-2  items-center">
             <div class="relative w-10 "><img src="/images/icon-cart.svg" class="md:w-6 md:h-6 h-5 w-5 cursor-pointer " alt="cart icon"
-                    @mouseenter="trigerCartFlag=!trigerCartFlag" @mouseleave="trigerCartFlag=!trigerCartFlag" @click="trigerCartFlag=!trigerCartFlag">
-                <p class="absolute bg-orange text-[white] text-sm md:px-2 px-2 rounded-full top-[-10px]  right-2 ">2
+                     @click="cart.isActive=!cart.isActive">
+                <p :key="cart.count" v-if="cart.count" class="absolute bg-orange text-[white] text-sm md:px-2 px-2 rounded-full top-[-10px]  right-2 ">{{ cart.count }}
                 </p>
                 <!-- avatar -->
             </div>
-            <div class=""> <img src="/images/image-avatar.png" class="profileImage" alt="cart icon">
+            <div class=""><img src="/images/image-avatar.png" class="profileImage" alt="cart icon" @click="console.log(cart.count);">
             </div>
         </div>
         <!-- cart bascket -->
-        <Cart v-if="trigerCartFlag" />
+        <Cart v-if="cart.isActive" />
     </div>
 </template>
